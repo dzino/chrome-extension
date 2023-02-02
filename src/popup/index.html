@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upwork</title>
+    <script type="module" src="script.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <div class="flex">
+        <div class="col1"></div>
+        <div id="clear" class="col2">Сброс</div>
+      </div>
+      <div id="content"></div>
+    </div>
+  </body>
+  <style>
+    body {
+      width: 400px;
+      background-color: #06e2f9;
+    }
+    #clear {
+      text-align: right;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 50px;
+    }
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+    .flex .col1 {
+      flex: auto;
+    }
+    .flex .col2 {
+      width: 100px;
+      text-align: right;
+    }
+    .progress {
+      height: 2px;
+      margin-bottom: 5px;
+    }
+  </style>
+</html>

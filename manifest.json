@@ -1,0 +1,19 @@
+{
+  "name": "Upwork",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/lib/jquery.js", "src/content_scripts.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["src/background.js"]
+  },
+  "browser_action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Upwork"
+  },
+  "permissions": ["storage"]
+}
